@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color:rgb(125, 44, 56);
+    color: white;
+    padding: 20px;
+}
+.menu-section {
+    margin: 20px;
+}
+.menu-section h2 {
+    color: #333;
+}
+.pizza-item {
+    height: 400px;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+.pizza-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff6347;
+}
+.pizza-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.pic-img{
+    width: 300px;;
+}
+
+.button-container{
+    display:flex;
+    justify-content: space-between;
+}
+.add-to-cart{
+    background-color: green; /* Orange background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Inline-flex for proper alignment */
+    align-items: center; /* Center items vertically */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 10px 5px; /* Margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add-to-cart svg {
+    width: 14px; /* Width of the SVG icon */
+    height: 14px; /* Height of the SVG icon */
+    margin-right: 10px; /* Space between text and icon */
+    fill: white; /* SVG icon color */
+}
+
+.add-to-cart :hover {
+    background-color: rgb(7, 68, 7); /* Darker green on hover */
+}
+
+.add-to-cart :focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.remove-from-cart{
+    background-color: #d53624; /* Red background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Inline-flex for proper alignment */
+    align-items: center; /* Center items vertically */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 10px 5px; /* Margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.remove-from-cart svg {
+    width: 14px; /* Width of the SVG icon */
+    height: 14px; /* Height of the SVG icon */
+    margin-right: 10px; /* Space between text and icon */
+    fill: white; /* SVG icon color */
+}
+
+.remove-from-cart:hover {
+    background-color: #300b07; /* Darker red on hover */
+}
+
+.remove-from-cart:focus {
+    outline: none; /* Remove outline on focus */
+}

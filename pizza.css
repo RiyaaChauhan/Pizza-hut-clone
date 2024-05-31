@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.bar a img{
+    height: 70px;
+    border-color: white;
+}
+
+.bar a:nth-child(1) {
+    padding-top: 11px;
+    padding-left: 147px;
+}
+
+.bar a{
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 138px;
+    color: rgb(83, 83, 83);
+}
+.bar a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.banner{
+    position: relative;
+    background: url(./footer/assets/banner.jpg) no-repeat center center/cover;
+    height: 66%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gap{
+    height: 34%;
+    /* background: rebeccapurple; */
+}
+
+.box{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 69%;
+    width: 36%;
+    top: 68%;
+    left: 32%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 5px 10px 21px 3px rgb(158, 158, 158);
+}
+
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#box1{
+    width: 45%;
+    height: 100%;
+}
+
+#box1 p, #box2 p{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+#box2{
+    width: 55%;
+    height: 100%;
+    background: rgb(189, 189, 189);
+}
+#box2 p{
+    color: rgb(92, 92, 92);
+}
+
+#box3{
+    height: 28%;
+    padding: 15px;
+    font-size: small;
+}
+#box4{
+    height: 38%;
+    width: 93%;
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    flex-direction: column;
+}
+#box4 input{
+    height: 50%;
+    width: 100%;  
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+#box4 button{
+    width: 100%;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+    background: green;
+    cursor: pointer;
+    font-size: 18px;
+}
+#box4 button:hover{
+    background: rgb(1, 102, 1);
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+}
+.p-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    background: grey;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 98%;
+    opacity: 0.5;
+}
+.p-head h2{
+    margin-bottom: 2rem;
+    /* padding-bottom: 20px; */
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    background: white;
+}
+
+.posters img{
+    width: 40%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    /* background: red; */
+    width: 80%;
+    margin: 1% auto;
+}
+.btn button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: green;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 22px;
+}
+.btn button:hover{
+    background: rgb(1, 95, 1);
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 4%;
+    margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services li{
+    list-style: none;
+}
+
+.services li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    height: 3rem;
+}
+.feedback{
+    width: 50%;
+    height: 100%;
+    padding: 0 0 0 8%;
+}
+.feedback span{
+    font-size: 15px;
+}
+.feedback button{
+    width: 27%;
+    height: 2.6rem;
+    margin-left: 2%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 1%;
+}
+.feedback button:hover{
+    background-color: rgb(184, 184, 184);
+
+}
+.feedback a{
+    text-decoration: none;
+     
+}
+.icons{
+    padding-left: 23%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a img{
+    width: 40px;
+    filter: invert();
+    padding: 15%;
+}

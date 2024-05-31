@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../footer/assets/bg-1.jpg");
+}
+.signin{
+    height: fit-content;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    backdrop-filter: blur(17px);
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5);
+}
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.signin h2{
+    padding: 1.5rem 0 0 0;
+}
+.signin form input{
+    height: 2.5rem;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    background: whitesmoke;
+    box-shadow: inset 0 0 10px #11111166;
+}
+.signin form button{
+    height: 2.5rem;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background: whitesmoke(255, 255, 255, 0.4);
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px 1px #111111;
+}
+.signin form button:hover{
+    background: whitesmoke(255, 255, 255, 1);
+    color: #000000;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.icons img{
+    height: 35px;
+    display: inline-block;
+}
+.icons img:hover{
+    filter: invert(0.2);
+}
+
+.group{
+    display: flex;
+    width: 100%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+    color: white;
+}
+.group a{
+    cursor: pointer;
+    text-decoration: overline;
+    color: rgb(0, 0, 0);
+}
+.group a:hover{
+    background: whitesmoke(255, 255, 255, 1);
+    color: #000000;
+}
+
+
+/* Responsive code*/
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .signin{
+        width: 85%;
+    }
+}
+@media (min-width: 500px) and (max-width: 850px) {
+    .signin{
+        width: 55%;
+    }
+}
+
+
+

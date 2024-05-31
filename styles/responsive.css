@@ -1,0 +1,176 @@
+@media (min-width: 300px) and (max-width: 550px) {
+  * {
+    margin: 0 auto;
+  }
+
+  .bar{
+    height: 8%;
+  }
+  .bar a:nth-child(1) {
+    padding-left: 55px;
+  }
+
+  .bar a {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 0;
+  }
+
+  .box {
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 10px;
+  }
+  #box4 input {
+    height: 40%;
+    }
+
+  .gap {
+    height: 5%;
+  }
+
+  .p-head h2 {
+    width: fit-content;
+  }
+
+  .posters img {
+    width: 84%;
+    border-radius: 10px;
+  }
+
+  .btn button {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 82%;
+    margin-left: 2.1rem;
+    margin-top: 2%;
+  }
+
+  .service {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .feedback {
+    width: 52%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .icons {
+    padding-left: 0%;
+    width: 44%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .feedback span {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .feedback button {
+    width: 80%;
+    height: 2.3rem;
+    margin: 3% 0 0 0;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10%;
+  }
+
+  .group {
+    margin-top: 10%;
+  }
+
+
+
+  .banner {
+    height: 40%;
+  }
+
+  .box1 {
+    width: 100%;
+  }
+
+  .posters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
+@media (min-width: 551px) and (max-width: 950px) {
+
+  .banner {
+    height: 30%;
+  }
+
+  .gap {
+    height: 8%;
+  }
+
+  .box {
+    height: 90%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  }
+
+  .p-head h2 {
+    width: 50%;
+  }
+
+
+
+  .posters img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 2% auto;
+    border-radius: 15px;
+  }
+
+  .btn {
+    height: 3.5rem;
+    margin: auto;
+  }
+  .btn button {
+    font-size: 20px;
+  }
+
+  .icons {
+    width: 40%;
+    padding-left: 0;
+  }
+
+  .feedback {
+    width: 60%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feedback button {
+    width: 35%;
+    height: 2.7rem;
+  }
+
+  .feedback span {
+    font-size: 17px;
+  }
+
+}
+
+
+
+
