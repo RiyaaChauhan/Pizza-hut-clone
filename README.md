@@ -46,6 +46,7 @@ Installation:
         npm install
 
 3) Run
+
         npm run start-dev
 
 You are now in the dev environment and you can play around
