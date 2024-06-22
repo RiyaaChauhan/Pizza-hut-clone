@@ -37,7 +37,7 @@ Installation:
 
 1) Clone the Repository:
 
-        git clone https://github.com/your-username/pizza-hut-clone.git
+        git clone https://github.com/RiyaaChauhan/pizza-hut-clone.git
         cd pizza-hut-clone
 
 2) Install Dependencies:   
