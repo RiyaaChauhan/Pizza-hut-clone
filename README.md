@@ -3,6 +3,10 @@
 
 A Pizza Hut Clone is a web or mobile application designed to emulate the functionality, design, and user experience of the popular Pizza Hut platform. 
 
+## Live Server
+
+https://riyaachauhan.github.io/Pizza-hut-clone/
+
 ## Features
 
 - Menu Display : Comprehensive list of pizzas, sides, beverages, and desserts with detailed descriptions and prices.
