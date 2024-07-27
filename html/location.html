@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Current Location</title>
+    <title>Find Location</title>
 </head>
 <body>
     <form>
-        <input type="text" id="input-location" placeholder="Location will appear here">
-        <button type="button" id="submit-btn">Get Location</button>
+        <input type="text" id="input-location" placeholder="Enter place name or city">
+        <button type="button" id="submit-btn">Find Location</button>
+        <button type="button" id="geolocate-btn">Use My Current Location</button>
     </form>
-    <script src="script.js"></script>
+    <div id="location-result"></div>
+    <script src="../js/location.js"></script>
 </body>
 </html>
