@@ -1,31 +1,52 @@
-document.getElementById('submit-btn').addEventListener('click', function() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
+const inputLocation = document.getElementById('input-location');
+const suggestionsContainer = document.getElementById('suggestions');
+const submitBtn = document.getElementById('submit-btn');
+
+inputLocation.addEventListener('input', debounce(getSuggestions, 300));
+suggestionsContainer.addEventListener('click', handleSuggestionClick);
+
+submitBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+    console.log("Submit button clicked"); // Optional: log to console for debugging
+    // For now, it does nothing when clicked submit button
 });
 
-function showPosition(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-    var locationString = "Latitude: " + latitude + ", Longitude: " + longitude;
-    document.getElementById('input-location').value = locationString;
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
 }
 
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            alert("User denied the request for Geolocation.");
-            break;
-        case error.POSITION_UNAVAILABLE:
-            alert("Location information is unavailable.");
-            break;
-        case error.TIMEOUT:
-            alert("The request to get user location timed out.");
-            break;
-        case error.UNKNOWN_ERROR:
-            alert("An unknown error occurred.");
-            break;
+function getSuggestions() {
+    const query = inputLocation.value.trim();
+    if (query.length < 2) {
+        suggestionsContainer.innerHTML = '';
+        return;
+    }
+
+    const apiKey = 'YOUR_OPENCAGE_API';  //Replace it with your OpenCage Api key, 'ea3be8a848af455e82b3a655cab9f391" you can use this for testing pupose
+    const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(query)}&key=${apiKey}&limit=5`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const suggestions = data.results.map(result => result.formatted);
+            displaySuggestions(suggestions);
+        })
+        .catch(error => console.error('Error fetching suggestions:', error));
+}
+
+function displaySuggestions(suggestions) {
+    suggestionsContainer.innerHTML = suggestions.map(suggestion => 
+        `<div class="suggestion">${suggestion}</div>`
+    ).join('');
+}
+
+function handleSuggestionClick(event) {
+    if (event.target.classList.contains('suggestion')) {
+        inputLocation.value = event.target.textContent;
+        suggestionsContainer.innerHTML = '';
     }
 }
