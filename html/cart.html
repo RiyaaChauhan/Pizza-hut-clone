@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../styles/cart.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap cf">
+    <div class="heading cf">
+      <h1>My Cart</h1>
+      <a href="../footer/pizzas.html" class="continue">Continue Shopping</a>
+    </div>
+    <div class="cart">
+      <ul class="tableHead">
+        <div class="leftSide">
+          <li class="prodHeader">Product</li>
+          <li>Quantity</li>
+        </div>
+        <div class="rightSide">
+          <li>Total</li>
+          <li>Remove</li>
+        </div>
+      </ul>
+      <ul class="cartWrap">
+        <!-- Cart items will be dynamically inserted here -->
+      </ul>
+    </div>
+    <div class="subtotal cf">
+      <ul>
+        <li class="totalRow"><span class="label">Subtotal</span><span class="subtotal-value">₹0</span></li>
+        <li class="totalRow"><span class="label">Shipping</span><span class="value">₹0</span></li>
+        <li class="totalRow"><span class="label">Tax</span><span class="value">₹0</span></li>
+        <li class="totalRow final"><span class="label">Total</span><span class="total-value">₹0</span></li>
+        <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="../js/cart.js" ></script>
+</body>
+</html>

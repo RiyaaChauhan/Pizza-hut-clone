@@ -29,7 +29,8 @@ html, body{
 .bar a{
     text-decoration: underline;
     cursor: pointer;
-    padding-right: 138px;
+    padding-right: 100px;
+    margin-bottom: 20px;
     color: rgb(83, 83, 83);
 }
 .bar a:hover{
@@ -258,4 +259,28 @@ footer{
     width: 40px;
     filter: invert();
     padding: 15%;
+}
+
+.cart{
+    position: relative;
+    padding-right: 138px;
+    cursor: pointer;
+   margin-top: 16px;
+}
+.cart span{
+    position: absolute;
+    top: -15px;
+    background-color: brown;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+.cart i{
+    font-size: 18px;
+}
+.right-side{
+display: flex;
+flex-direction: row;
+align-items: center;
+
 }

@@ -10,6 +10,15 @@ header {
     background-color:rgb(125, 44, 56);
     color: white;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header h1{
+    flex-basis: 90%;
+    padding-left: 120px;
+    
 }
 .menu-section {
     margin: 20px;
@@ -114,4 +123,32 @@ header {
 
 .remove-from-cart:focus {
     outline: none; /* Remove outline on focus */
+}
+
+
+.cart{
+    position: relative;
+    padding-right: 138px;
+    cursor: pointer;
+   margin-top: 16px;
+   text-decoration: none;
+   color: white;
+ margin-bottom: 14px;
+}
+.cart span{
+    position: absolute;
+    top: -15px;
+    background-color: brown;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+.cart i{
+    font-size: 18px;
+}
+.right-side{
+display: flex;
+flex-direction: row;
+align-items: center;
+
 }
