@@ -37,6 +37,59 @@ html, body{
     color: black;
 }
 
+
+
+
+
+
+/* styles.css */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.auth-cart {
+    display: flex;
+    align-items: center;
+}
+
+.auth-cart a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust the size of the cart icon if necessary */
+}
+
+.cart-icon .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
 .banner{
     position: relative;
     background: url(./footer/assets/banner.jpg) no-repeat center center/cover;
